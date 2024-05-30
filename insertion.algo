@@ -1,0 +1,18 @@
+ALGORITHM insertion_sort
+VAR
+ arr:= ARRAY_OF FLOAT[20];
+ i , j ,x = INTEGER
+BEGIN
+    For i FROM 1 TO 20 step 1 Do 
+  Read (arr[i])
+END-FOR 
+ FOR i FROM 1 TO 20 step 1 Do 
+ x:=arr[i]
+ FOR j FROM i-1 TO (j>=0 AND arr[j]> x) STEP -1 Do
+ arr [j+1]=arr[j]
+ END_FOR 
+ arr[j+1]=x
+ END_FOR
+ END
+
+
